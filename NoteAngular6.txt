@@ -26,3 +26,13 @@ git push -u origin master
 git status
 git add .
 git commit -m "Notes commit/push"
+git push -u origin master
+git status
+
+GitHub Commit and Push
+----------------------
+git status
+git add .
+git commit -m "Notes commit/push"
+git push -u origin master
+git status
