@@ -18,4 +18,11 @@ Msg: Changes not staged for commit
 Msg: Untracked files:
 git status
 Msg: Changes not staged for commit
-Msg: Untracked files:
+Msg: Untracked files
+git add .
+git commit -m "first commit"
+3 files changed, 33 insertions(+), 12 deletions(-)
+git push -u origin master
+git status
+git add .
+git commit -m "Notes commit/push"
