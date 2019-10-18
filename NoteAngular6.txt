@@ -3,7 +3,17 @@ https://angular.io/cli
 
 NPM Install
 -----------
-npm install bootstrap@3 jquery --save
+npm install bootstrap@3 jquery --save //Have to restart app ng s -o
+
+Validate CSS/JS files
+---------------------
+http://localhost:4200/node_modules/bootstrap/dist/css/bootstrap.min.css
+
+???
+1. Web Back
+2. websocket sock.js
+
+
 
 Check Version
 
