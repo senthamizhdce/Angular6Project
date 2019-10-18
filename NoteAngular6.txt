@@ -1,6 +1,12 @@
 https://angular.io/start
 https://angular.io/cli
 
+NPM Install
+-----------
+npm install bootstrap@3 jquery --save
+
+Check Version
+
 create repository Angular6Project
 ng new demo Angular6Project
 Go to package.json and modify "rxjs": "^6.0.0" to "rxjs": "6.0.0"
@@ -32,6 +38,10 @@ git commit -m "Notes commit/push"
 git push -u origin master
 git status
 
+Run angular
+-----------
+ng s -o
+
 GitHub Commit and Push
 ----------------------
 git status
@@ -51,5 +61,10 @@ http://localhost:4200/
 Method 2
 ng serve --open
 ng s -o
+
+Instal
+------
+npm install bootstrap@3 jquery --save
+
 
 
