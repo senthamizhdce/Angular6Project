@@ -105,5 +105,28 @@ Instal
 ------
 npm install bootstrap@3 jquery --save
 
+Notes
+-----
+1. When working with reactive forms we create instances of FormControl and FormGroup classes to create a form model.
+2. To bind an HTML <form> tag in the template to the FromGroup instance in the component class, we use formGroup directive
+3. To bind an  HTML <input> element in the template to the FormControl instance in the component class, we use formControlName directive
+4. formGroup and formControlName directives are provided by the ReactiveFormsModule
+5. Both FormControl and FormGroup classes inherit from AbstractControl base class
+6. The AbstractControl class has properties that help us track both FormControl and FormGroup value and state
 
+AbstractControl - The following are some of the useful properties provided by the AbstractControl class
+value
+errors
+valid
+invalid
+dirty
+pristine
+touched
+untouched
+setValidators()
+clearValidators()
+updateValueAndValidity()
+setValue()
+patchValue()
+Reset()
 
