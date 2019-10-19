@@ -1,9 +1,31 @@
 https://angular.io/start
 https://angular.io/cli
+http://csharp-video-tutorials.blogspot.com/2018/08/creating-angular-6-project.html
+https://www.youtube.com/user/kudvenkat/playlists
 
 NPM Install
 -----------
 npm install bootstrap@3 jquery --save //Have to restart app ng s -o
+//g - generate
+//c - component
+//m - module
+//spec=false - Unit test file false
+//--flat=true - No need dedicated folder
+//--module=app tells the Angular CLI to import and register routing module in the application root module AppModule.
+ng g c employee/create-employee --spec=false --flat=true 
+ng g c employee/list-employees --spec=false --flat=true
+ng generate module app-routing --flat=true --module=app
+ng s -o //To run
+
+Errors
+------
+router-outlet is not a known element:
+Fix -  exports:[RouterModule] in @ngmodule
+
+Short cut
+---------
+Quick fix - Ctrl + Dot - To import component
+
 
 Validate CSS/JS files
 ---------------------
