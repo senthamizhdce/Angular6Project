@@ -41,6 +41,12 @@ http://localhost:4200/node_modules/bootstrap/dist/css/bootstrap.min.css
 ???
 1. Web Back
 2. websocket sock.js
+3. [WDS] Live Reloading enabled.
+4. [WDS] App updated. Recompiling.
+5. [WDS] App updated. Reloading.
+6. Collaps DIV Function Class Cntril M L
+
+
 
 
 

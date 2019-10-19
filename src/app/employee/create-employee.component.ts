@@ -10,13 +10,19 @@ import { notStrictEqual } from 'assert';
 
 export class CreateEmployeeComponent implements OnInit {
 
-  employeeForm: FormGroup;
+  employeeForm: FormGroup; 
   constructor() { }
 
   ngOnInit() {
     this.employeeForm = new FormGroup({
       fullName: new FormControl(),
-      email: new FormControl()
+      email: new FormControl(),
+      // Create nested form group for skills
+      skills: new FormGroup({
+        skillName: new FormControl(),
+        experienceInYears: new FormControl(),
+        proficiency: new FormControl()
+      })
     });
   }
 
@@ -24,9 +30,11 @@ export class CreateEmployeeComponent implements OnInit {
     console.log(this.employeeForm.value);
     console.log(this.employeeForm); //Check the Log for dirty and more
     console.log(this.employeeForm.get('fullName').value);
-    console.log(this.employeeForm.controls.fullName.value);     
+    console.log(this.employeeForm.controls.fullName.value);
+    console.log(this.employeeForm.controls.skills.value);
+    //console.log(this.employeeForm.controls.skills.value.skillName.value);
+    console.log(this.employeeForm.controls.skills.value);
   }
-
 }
 
 // Notes
@@ -47,3 +55,9 @@ export class CreateEmployeeComponent implements OnInit {
 // pristine
 // touched
 // untouched
+// setValidators()
+// clearValidators()
+// updateValueAndValidity()
+// setValue()
+// patchValue()
+// Reset()
