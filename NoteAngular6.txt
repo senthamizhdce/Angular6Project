@@ -17,10 +17,17 @@ ng g c employee/list-employees --spec=false --flat=true
 ng generate module app-routing --flat=true --module=app
 ng s -o //To run
 
+
 Errors
 ------
 router-outlet is not a known element:
 Fix -  exports:[RouterModule] in @ngmodule
+Can't bind to 'formGroup' since it isn't a known property of 'form'
+Fix - 
+app.module.ts 
+import { ReactiveFormsModule } from '@angular/forms';
+@NgModule({
+  imports: [ ReactiveFormsModule ]})
 
 Short cut
 ---------
