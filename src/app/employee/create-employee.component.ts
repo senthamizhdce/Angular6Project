@@ -35,7 +35,22 @@ export class CreateEmployeeComponent implements OnInit {
     //console.log(this.employeeForm.controls.skills.value.skillName.value);
     console.log(this.employeeForm.controls.skills.value);
   }
+
+  onLoadDataClick(): void {
+    this.employeeForm.setValue({
+      fullName: 'Pragim Technologies',
+      email: 'pragim@pragimtech.com',
+      // skills: {
+      //   skillName: 'C#',
+      //   experienceInYears: 5,
+      //   proficiency: 'beginner'
+      // }
+    });
+  }
+
 }
+
+
 
 // Notes
 // -----
