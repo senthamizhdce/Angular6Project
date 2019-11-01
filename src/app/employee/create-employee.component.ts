@@ -10,7 +10,7 @@ import { notStrictEqual } from 'assert';
 
 export class CreateEmployeeComponent implements OnInit {
 
-  employeeForm: FormGroup; 
+  employeeForm: FormGroup;
   constructor() { }
 
   ngOnInit() {
@@ -31,9 +31,9 @@ export class CreateEmployeeComponent implements OnInit {
     console.log(this.employeeForm); //Check the Log for dirty and more
     console.log(this.employeeForm.get('fullName').value);
     console.log(this.employeeForm.controls.fullName.value);
-    console.log(this.employeeForm.controls.skills.value);
+    //console.log(this.employeeForm.controls.skills.value);
     //console.log(this.employeeForm.controls.skills.value.skillName.value);
-    console.log(this.employeeForm.controls.skills.value);
+    //console.log(this.employeeForm.controls.skills.value);
   }
 
   onLoadDataClick(): void {

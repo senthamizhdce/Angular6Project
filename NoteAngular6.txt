@@ -20,14 +20,16 @@ ng s -o //To run
 
 Errors
 ------
-router-outlet is not a known element:
+1. router-outlet is not a known element:
 Fix -  exports:[RouterModule] in @ngmodule
-Can't bind to 'formGroup' since it isn't a known property of 'form'
+2. Can't bind to 'formGroup' since it isn't a known property of 'form'
 Fix - 
 app.module.ts 
 import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   imports: [ ReactiveFormsModule ]})
+3. Must supply a value for form control with name: 'skills'
+
 
 Short cut
 ---------
